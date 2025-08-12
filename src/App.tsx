@@ -1,10 +1,20 @@
 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
+import './App.css'
+import { useState } from 'react'
+
+
+interface Message {
+  text:string
+  sender:string;
+
+}
 function App() {
- 
+  const [messages, setMessages] = useState<Message[]>([
+      { sender: 'ai', text: 'Yer wishes be me commands. What be yer query?' },
+  { sender: 'user', text: 'Why did the pirate cross the road?' },
+    { sender: 'ai', text: 'To get his buried treasure, arr!' }
+                ]);
 
   return (
     <>
