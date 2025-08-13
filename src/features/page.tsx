@@ -3,8 +3,9 @@
 const page = () => {
   return (
     <div>
-      <h1>this is my first page </h1>
+      <h1>this is my features page </h1>
     </div>
+    
   )
 }
 
