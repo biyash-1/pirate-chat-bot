@@ -40,3 +40,63 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+/* css */
+
+
+.message {
+  border-radius: 5px;
+  padding: 0.5em;
+  --message-color-ai: #d9dede;
+  --message-color-user: #F95738;
+}
+
+.message.ai {
+  margin-right: 2em;
+  background-color: var(--message-color-ai);
+}
+
+.message.user {
+  margin-left: 2em;
+  background-color: var(--message-color-user);
+  color: white;
+}
+
+.input-form {
+  display: flex;
+}
+
+.input-form input[type='text'] {
+  margin-right: 1rem;
+  flex: 1 1;
+  line-height: 2;
+}.message {
+  /* Add padding and border radius to all messages */
+  --message-color-ai: #d9dede;
+  --message-color-user: #F95738;
+
+}
+.message.ai {
+  margin-right: 2em;
+  /* Add a background color using the --message-color-ai */
+}
+
+.message.user {
+  margin-left: 2em;
+  /* Add a background color using the --message-color-user */
+}
+
+
+.vertical {
+    display: flex; /* Flex container for the form */
+    }
+
+    .vertical input {
+      line-height: 2; /* Taller inputs */
+      }
+
+      .vertical input[type="text"] {
+        flex-grow: 1; /* Text input fills space */
+        }
