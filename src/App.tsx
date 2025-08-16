@@ -19,7 +19,7 @@ function App() {
 
   return (
     <main>
-      <h1>Pirate Chat Bot</h1>
+      <h1> Simle Pirate Chat Bot</h1>
       <div>
         {messages.map((msg, index) => (
           <p key={index} className={`message ${msg.sender}`}>
