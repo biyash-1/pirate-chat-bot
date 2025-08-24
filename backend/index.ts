@@ -5,13 +5,13 @@ export async function main(event: APIGatewayEvent) {
   const openai = new OpenAI({ apiKey: process.env["OPENAI_KEY"] });
 
   try {
-    // Parse request body
+  
     const body = event.body ? JSON.parse(event.body) : {};
     const messages = body.messages || [];
 
     console.log("Received messages:", messages);
 
-    // System prompt (pirate mode 🏴‍☠️)
+   
     const systemPrompt: OpenAI.Chat.Completions.ChatCompletionMessageParam = {
       role: "system",
       content: "You are a helpful assistant who talks like a pirate",
